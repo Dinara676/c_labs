@@ -4,9 +4,9 @@
 int main()
 {
     double x;
-    printf("Enter x { x >= 0 } -> ");
+    printf("Enter x { x > 0.00001 && x < 1} -> ");
     scanf("%lf", &x);
-    if (x >= 0)
+    if (x >= 0.00001 && x < 1)
     {
         double y = 5 * sqrt (sin (sqrt (x)));
         double z = log10 (cos (log (y)));
